@@ -135,3 +135,9 @@ span.highlight {
   display: flex;
   justify-content: space-between;
 }
+
+.circle {  
+  border-radius: 50%;  
+  width: 300px;  
+  height: 300px;  
+}  
