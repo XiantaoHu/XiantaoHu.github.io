@@ -1,0 +1,16 @@
+
+@article{Hu_2024_TCSVT,
+  author       = {Xiantao Hu and
+                  Bineng Zhong and
+                  Qihua Liang and
+                  Shengping Zhang and
+                  Ning Li and
+                  Xianxian Li and
+                  Rongrong Ji},
+  title        = {Transformer Tracking via Frequency Fusion},
+  journal      = {{IEEE} Trans. Circuits Syst. Video Technol.},
+  volume       = {34},
+  number       = {2},
+  pages        = {1020--1031},
+  year         = {2024}
+}
