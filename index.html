@@ -643,7 +643,7 @@
           year: 2026,
           selected: true,
           title: "Adaptive Depth Lightweight RGB-T Tracking with Holistic Token Routing.",
-          authors: "Tian Ding, Hongtao Yang, Liangtao Shi, Jun Li, <b><u>Xiantao Hu✉</u></b>, Jian Yang, Ying Tai✉.",
+          authors: "Tian Ding, Hongtao Yang, Liangtao Shi, Jun Li, <b>Xiantao Hu✉</b>, Jian Yang, Ying Tai✉.",
           venue: "<i>Conference on Computer Vision and Pattern Recognition (CVPR), 2026..</i>",
           pdf: "",   // TODO: 填你的 PDF 链接
           code: "",  // TODO: 填你的 Code 链接
@@ -653,7 +653,7 @@
           year: 2025,
           selected: true,
           title: "Exploiting Multimodal Spatial-temporal Patterns for Video Object Tracking.",
-          authors: "<b><u>Xiantao Hu</u></b>, Ying Tai✉, Xu Zhao, Chen Zhao, Zhenyu Zhang, Jun Li, Bineng Zhong, Jian Yang✉.",
+          authors: "<b>Xiantao Hu</b>, Ying Tai✉, Xu Zhao, Chen Zhao, Zhenyu Zhang, Jun Li, Bineng Zhong, Jian Yang✉.",
           venue: "<i>AAAI Conference on Artificial Intelligence (AAAI), Oral, 2025.</i>",
           pdf: "https://arxiv.org/abs/2412.15691",   // TODO: 填你的 PDF 链接
           code: "https://github.com/NJU-PCALab/STTrack",  // TODO: 填你的 Code 链接
@@ -715,19 +715,19 @@
       journal: [
 			  { year: 2025, selected: true,
           title: "Adaptive Perception for Unified Visual Multi-modal Object Tracking.",
-          authors: "<b><u>Xiantao Hu</u></b>, Bineng Zhong✉, Qihua Liang, Liangtao Shi, Zhiyi Mo, Ying Tai, Jian Yang.",
+          authors: "<b>Xiantao Hu</b>, Bineng Zhong✉, Qihua Liang, Liangtao Shi, Zhiyi Mo, Ying Tai, Jian Yang.",
           venue: "<i>IEEE Transactions on Artificial Intelligence (TAI), 2025.</i>",
           pdf:"", code:"", bibtex:""
         },
 			  { year: 2024, selected: true,
           title: "Towards Modalities Correlation for RGB-T Tracking.",
-          authors: "<b><u>Xiantao Hu</u></b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li.",
+          authors: "<b>Xiantao Hu</b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li.",
           venue: "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.</i>",
           pdf:"", code:"", bibtex:""
         },
 				  { year: 2023, selected: true,
           title: "Transformer Tracking via Frequency Fusion.",
-          authors: "<b><u>Xiantao Hu</u></b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li, Rongrong Ji.",
+          authors: "<b>Xiantao Hu</b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li, Rongrong Ji.",
           venue: "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2023.</i>",
           pdf:"", code:"", bibtex:""
         },
@@ -855,7 +855,8 @@
           const hasPdf = !!(it.pdf && it.pdf.trim());
           const hasCode = !!(it.code && it.code.trim());
           const hasBib = !!(it.bibtex && it.bibtex.trim());
-          const star = it.selected ? `<span class="star" title="Selected">★ Selected</span>` : "";
+          // const star = it.selected ? `<span class="star" title="Selected">★ Selected</span>` : "";
+			const star = "";
 
           // Provide placeholder buttons even if empty? (你要求“按钮位”，我这里选择：没填就不显示按钮，避免假链接)
           const actions = `
