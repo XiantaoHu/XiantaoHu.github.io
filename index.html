@@ -516,7 +516,7 @@
         </section>
 
         <section id="publications" class="card">
-          <h2>Some Publications</h2>
+          <h2>Publications</h2>
           <p class="small">* indicates contributed equally, ✉ indicates corresponding authors</p>
 
           <div class="pub-controls" aria-label="Publications controls">
@@ -1007,12 +1007,20 @@
       // Active link highlight
       const sections = Array.from(document.querySelectorAll("main section[id]"));
       const allNavLinks = Array.from(document.querySelectorAll("a.navlink"));
-      const setActive = (id) => {
-        allNavLinks.forEach(a => a.setAttribute(
-          "aria-current",
-          a.getAttribute("href") === ("#" + id) ? "true" : "false"
-        ));
-      };
+      // const setActive = (id) => {
+      //   allNavLinks.forEach(a => a.setAttribute(
+      //     "aria-current",
+      //     a.getAttribute("href") === ("#" + id) ? "true" : "false"
+      //   ));
+      // };
+		const setActive = (id) => {
+  const target = "#" + id;
+  document.querySelectorAll("a.navlink").forEach(a => {
+    const isActive = a.getAttribute("href") === target;
+    if (isActive) a.setAttribute("aria-current", "true");
+    else a.removeAttribute("aria-current"); // 用 remove 更干净
+  });
+};
       const io = new IntersectionObserver((entries) => {
         const visible = entries.filter(e => e.isIntersecting)
                                .sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
