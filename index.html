@@ -1,4 +1,4 @@
-
+<!-- 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -251,4 +251,1055 @@
 </body>
 
 </html>
+ -->
 
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Xiantao Hu（胡现韬）｜Homepage</title>
+  <meta name="description" content="Xiantao Hu（胡现韬）个人学术主页：研究方向、教育经历、工作经历、论文、学术服务与联系方式。" />
+  <link rel="canonical" href="https://zhang1hongliang.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Xiantao Hu（胡现韬）｜ Homepage" />
+  <meta property="og:description" content="Research, Education, Publications, Professional Activities." />
+  <meta property="og:url" content="https://zhang1hongliang.github.io/" />
+  <meta property="og:image" content="https://zhang1hongliang.github.io/me.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xiantao Hu",
+    "alternateName": "胡现韬",
+    "url": "https://xiantaohu.github.io/index.html/",
+    "affiliation": { "@type": "Organization", "name": "Nanjing University of Science and Technology" },
+    "sameAs": [
+      "https://scholar.google.com.hk/citations?user=ZlUB72cAAAAJ&hl=zh-CN",
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#111318; --muted:#5a616d;
+      --card:#f3f5f7; --border:rgba(0,0,0,.10);
+      --link:#0b5fff; --link-hover:#0847bf;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px; --max:1040px; --navw:260px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b0c0f; --fg:#e9ecf2; --muted:#aab2c0;
+        --card:#141720; --border:rgba(255,255,255,.12);
+        --link:#7aa7ff; --link-hover:#a7c3ff;
+        --shadow:0 10px 30px rgba(0,0,0,.40);
+      }
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.65;
+      background:var(--bg);
+      color:var(--fg);
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{color:var(--link-hover); text-decoration:underline}
+
+    .skip{position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;}
+    .skip:focus{
+      left:16px; top:16px; width:auto; height:auto; overflow:visible;
+      padding:10px 12px; border-radius:12px; border:1px solid var(--border);
+      background:var(--card); z-index:9999;
+    }
+
+    header{
+      position:sticky; top:0; z-index:50;
+      border-bottom:1px solid var(--border);
+      backdrop-filter: blur(10px);
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+    }
+    .topbar{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{display:flex; align-items:center; gap:10px; min-width:0;}
+    .brand-title{
+      font-weight:800;
+      letter-spacing:.2px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .badge{
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--border);
+      padding:2px 8px;
+      border-radius:999px;
+    }
+    .btn{
+      border:1px solid var(--border);
+      background:var(--card);
+      color:var(--fg);
+      padding:9px 12px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    .btn:focus{outline:2px solid color-mix(in srgb, var(--link) 55%, transparent); outline-offset:2px;}
+    .btn:hover{box-shadow:var(--shadow);}
+    .btn.small{padding:7px 10px; font-size:13px;}
+
+    .wrap{max-width:var(--max); margin:0 auto; padding:18px 16px 60px;}
+    .layout{
+      display:grid;
+      grid-template-columns: var(--navw) 1fr;
+      gap:18px;
+      align-items:start;
+      margin-top:14px;
+    }
+
+    aside{position:sticky; top:72px; align-self:start;}
+    .sidecard{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:var(--card);
+      padding:14px;
+      box-shadow:var(--shadow);
+    }
+    nav ul{list-style:none; padding:0; margin:0; display:grid; gap:6px;}
+    .navlink{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px;
+      padding:10px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+      color:var(--fg);
+    }
+    .navlink:hover{background: color-mix(in srgb, var(--bg) 55%, transparent); text-decoration:none;}
+    .navlink[aria-current="true"]{
+      border-color: color-mix(in srgb, var(--link) 35%, transparent);
+      background: color-mix(in srgb, var(--link) 12%, transparent);
+    }
+    .hint{font-size:12px; color:var(--muted);}
+
+    main{min-width:0;}
+    .stack{display:grid; gap:16px;}
+    .card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:var(--bg);
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+
+    .hero{display:grid; grid-template-columns:170px 1fr; gap:16px; align-items:center;}
+    .avatar{
+      width:170px; height:170px; border-radius:22px; object-fit:cover;
+      border:1px solid var(--border);
+      background:var(--card);
+    }
+    .title h1{margin:0 0 6px 0; font-size:28px; line-height:1.2; letter-spacing:.2px;}
+    .subtitle{margin:0; color:var(--muted);}
+    .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
+    .pill{
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:6px 10px;
+      background:var(--card);
+      font-size:13px;
+      color:var(--fg);
+    }
+
+    section{scroll-margin-top:90px;}
+    h2{margin:0 0 10px 0; font-size:20px; letter-spacing:.2px;}
+    h3{margin:14px 0 8px 0; font-size:16px;}
+    ul{margin:8px 0 0 18px;}
+    ol{margin:8px 0 0 18px;}
+    li{margin:6px 0;}
+    .small{color:var(--muted); font-size:13px;}
+
+    @media (max-width: 920px){
+      .layout{grid-template-columns:1fr;}
+      aside{position:static;}
+    }
+    @media (max-width: 720px){
+      .hero{grid-template-columns:1fr;}
+      .avatar{width:120px; height:120px; border-radius:18px;}
+      .title h1{font-size:24px;}
+    }
+
+    .drawer{
+      display:none;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:var(--card);
+      padding:12px;
+      margin-bottom:14px;
+      box-shadow:var(--shadow);
+    }
+    .drawer.open{display:block;}
+    @media (min-width: 921px){
+      .drawer-toggle{display:none;}
+      .drawer{display:none !important;}
+    }
+
+    /* News timeline */
+    .timeline{list-style:none; margin:10px 0 0 0; padding:0; position:relative;}
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:12px; top:4px; bottom:4px;
+      width:2px;
+      background: color-mix(in srgb, var(--muted) 35%, transparent);
+      border-radius:99px;
+    }
+    .t-item{position:relative; padding-left:38px; margin:0;}
+    .t-item + .t-item{margin-top:12px;}
+    .t-dot{
+      position:absolute; left:6px; top:6px;
+      width:14px; height:14px; border-radius:99px;
+      background:var(--bg);
+      border:2px solid color-mix(in srgb, var(--link) 55%, transparent);
+      box-shadow:0 6px 16px rgba(0,0,0,.10);
+    }
+    .t-head{display:flex; gap:10px; flex-wrap:wrap; align-items:baseline;}
+    .t-time{font-weight:800; letter-spacing:.2px;}
+    .t-body{margin-top:2px;}
+
+    /* Publications */
+    .pub-controls{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top: 10px;
+      margin-bottom: 6px;
+    }
+    .input{
+      flex:1 1 240px;
+      min-width: 220px;
+      border:1px solid var(--border);
+      background: var(--bg);
+      color: var(--fg);
+      border-radius: 12px;
+      padding: 10px 12px;
+      outline: none;
+    }
+    .input:focus{ outline: 2px solid color-mix(in srgb, var(--link) 55%, transparent); outline-offset: 2px; }
+
+    .seg{
+      display:inline-flex;
+      border:1px solid var(--border);
+      border-radius: 12px;
+      overflow:hidden;
+      background: var(--bg);
+    }
+    .seg button{
+      border:0;
+      background:transparent;
+      color: var(--fg);
+      padding: 10px 12px;
+      cursor:pointer;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .seg button[aria-pressed="true"]{
+      background: color-mix(in srgb, var(--link) 12%, transparent);
+    }
+    .seg button:focus{ outline: 2px solid color-mix(in srgb, var(--link) 55%, transparent); outline-offset: -2px; }
+
+    details.pub-year{
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px 12px;
+      background: color-mix(in srgb, var(--card) 55%, transparent);
+      margin-top: 10px;
+    }
+    details.pub-year > summary{
+      cursor: pointer;
+      list-style: none;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      font-weight: 800;
+    }
+    details.pub-year > summary::-webkit-details-marker{display:none;}
+    .count{
+      font-weight:700;
+      color: var(--muted);
+      border:1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--bg);
+      font-size: 12px;
+    }
+    .pub-list{margin:10px 0 0 18px;}
+    .pub-item{margin:12px 0;}
+
+    .pub-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:8px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--fg);
+      cursor: pointer;
+      user-select:none;
+    }
+    .chip:hover{ box-shadow: var(--shadow); text-decoration:none; }
+    .chip[disabled]{ opacity:.45; cursor:not-allowed; box-shadow:none; }
+
+    .star{
+      display:inline-block;
+      font-size: 12px;
+      font-weight: 900;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: color-mix(in srgb, var(--link) 12%, transparent);
+      color: var(--fg);
+      margin-left: 8px;
+    }
+
+    /* BibTeX modal */
+    .modal-backdrop{
+      position:fixed; inset:0;
+      background: rgba(0,0,0,.45);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding: 16px;
+      z-index: 9999;
+    }
+    .modal-backdrop.open{ display:flex; }
+    .modal{
+      width: min(860px, 100%);
+      border-radius: 16px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .modal-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap: 10px;
+      padding: 12px 14px;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-title{
+      font-weight: 900;
+      letter-spacing: .2px;
+      font-size: 14px;
+      margin:0;
+    }
+    .modal-body{
+      padding: 12px 14px 14px;
+    }
+    .modal pre{
+      margin:0;
+      padding: 12px;
+      border-radius: 12px;
+      background: color-mix(in srgb, var(--card) 65%, transparent);
+      border: 1px solid var(--border);
+      overflow:auto;
+      max-height: 55vh;
+      white-space: pre;
+    }
+
+    footer{
+      max-width:var(--max);
+      margin:28px auto 0;
+      padding:0 16px 40px;
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-title">Xiantao Hu (胡现韬)</div>
+        <span class="badge">Ph.D. Student</span>
+      </div>
+      <button class="btn drawer-toggle" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="drawer" id="mobileNav" aria-label="Mobile navigation">
+      <nav>
+        <ul>
+          <li><a class="navlink" href="#home">Home <span class="hint">/</span></a></li>
+          <!-- <li><a class="navlink" href="#interest">Research Interests</a></li> -->
+          <!-- <li><a class="navlink" href="#news">News</a></li> -->
+          <li><a class="navlink" href="#education">Education</a></li>
+          <li><a class="navlink" href="#internship">Internship</a></li>
+          <li><a class="navlink" href="#publications">Publications</a></li>
+          <li><a class="navlink" href="#service">Academic Services</a></li>
+			<li><a class="navlink" href="#experience">Honors and Awards</a></li>
+        </ul>
+      </nav>
+      <p class="small" style="margin:10px 2px 0;">Tip: 点击任意菜单项会自动收起。</p>
+    </div>
+
+    <div class="layout">
+      <aside aria-label="Sidebar navigation">
+        <div class="sidecard">
+          <div style="margin-bottom:10px;">
+            <div style="font-weight:800;">Navigation</div>
+            <div class="small">Quick jump to sections</div>
+          </div>
+          <nav>
+            <ul>
+              <li><a class="navlink" href="#home">Home</a></li>
+              <!-- <li><a class="navlink" href="#interest">Research Interests</a></li> -->
+              <!-- <li><a class="navlink" href="#news">News</a></li> -->
+              <li><a class="navlink" href="#education">Education</a></li>
+              <!-- <li><a class="navlink" href="#experience">Experience</a></li> -->
+              <li><a class="navlink" href="#internship">Internship</a></li>
+				<li><a class="navlink" href="#publications">Publications</a></li>
+			  <li><a class="navlink" href="#service">Academic Services</a></li>
+			<li><a class="navlink" href="#experience">Honors and Awards</a></li>
+              
+              <!-- <li><a class="navlink" href="#service">Professional Activities</a></li> -->
+            </ul>
+          </nav>
+          <!-- <div style="margin-top:14px;" class="small">
+            <div><b>Contact</b></div>
+            <div>xiantaohu@njust.edu.cn, huxiantao481@gmail.com  </div>
+          </div> -->
+        </div>
+      </aside>
+
+      <main id="main" class="stack">
+        <section id="home" class="card" aria-label="Home section">
+          <div class="hero">
+            <img class="avatar" src="me.jpg" alt="Xiantao Hu portrait" width="170" height="170" loading="lazy" />
+            <div class="title">
+              <h1>Xiantao Hu <span class="small">(胡现韬)</span></h1>
+              <p class="subtitle">Ph.D. Student</p>
+              <p style="margin:10px 0 0 0;">
+                Pattern Computing and Application Laboratory (PCA Lab),
+                Nanjing University of Science and Technology (NUST), China.
+              </p>
+              <div class="meta" aria-label="Quick links">
+                <a class="pill" href="https://scholar.google.com.hk/citations?user=ZlUB72cAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <!-- <a class="pill" href="https://dblp.org/pid/77/10205-2.html" target="_blank" rel="noopener noreferrer">DBLP</a>
+                <a class="pill" href="https://www.researchgate.net/profile/Hongliang-Zhang-15" target="_blank" rel="noopener noreferrer">ResearchGate</a> -->
+              </div>
+              <p class="small" style="margin:10px 0 0 0;">xiantaohu@njust.edu.cn, huxiantao481@gmail.com}</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section id="interest" class="card">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>AI for Medicine</li>
+            <li>Optimal Transport</li>
+            <li>Evolutionary Learning</li>
+            <li>Learning for Optimization</li>
+          </ul>
+        </section> -->
+
+        <section id="news" class="card">
+          <h2>News</h2>
+          <ul class="timeline" id="newsTimeline" aria-label="News timeline"></ul>
+        </section>
+
+        <section id="education" class="card">
+          <h2>Education</h2>
+          <ul>
+            <li><b>Ph.D. Student</b>, September 2024 -- Present<br>
+              PCA Lab, School of Computer Science and Engineering, Nanjing University of Science and Technology (NUST), China.<br>
+              Supervised by
+              <b><a href="https://scholar.google.com.hk/citations?user=6CIDtZQAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Prof. Jian Yang</a></b>
+              and
+              <b><a href="https://scholar.google.com.hk/citations?user=NKaiUasAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Associate Prof. Ying Tai</a></b>.
+            </li>
+            <li><b>M. Eng</b>, September 2021 -- June 2024<br>
+              School of Computer Science and Technology, Guangxi Normal University (GXNU), China.<br>
+              Supervised by <b><a href="https://scholar.google.de/citations?user=hvRBydsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"> Prof. Bineng Zhong</a></b>.
+            </li>
+            <li><b>B. Eng</b>, September 2017 -- June 2021<br>
+              School of Computer Science and Technology, Guangxi Normal University (GXNU), China.
+            </li>
+          </ul>
+        </section>
+
+
+        <section id="internship" class="card">
+          <h2>Internship</h2>
+          <ul>
+            <li><b>Internship </b>, May 2025 -- January 2026<br>
+              China Mobile Research Institute, Beijing, China.<br>
+            </li>
+          </ul>
+        </section>
+
+        <section id="publications" class="card">
+          <h2>Highly Selected Publications</h2>
+          <p class="small">* indicates contributed equally, ✉ indicates corresponding authors</p>
+
+          <div class="pub-controls" aria-label="Publications controls">
+            <div class="seg" role="group" aria-label="View switch">
+              <button id="viewSelected" type="button" aria-pressed="true">Selected</button>
+              <button id="viewFull" type="button" aria-pressed="false">Full list</button>
+            </div>
+
+            <input id="pubSearch" class="input" type="search" placeholder="Search publications (title / authors / venue / year)..." autocomplete="off" />
+
+            <button id="expandAll" class="btn" type="button">Expand all</button>
+            <button id="collapseAll" class="btn" type="button">Collapse all</button>
+          </div>
+
+          <h3>Conference Papers</h3>
+          <div id="pubConf"></div>
+
+          <h3 style="margin-top:18px;">Journal Papers</h3>
+          <div id="pubJour"></div>
+        </section>
+
+        <section id="service" class="card">
+          <h2>Academic Services</h2>
+          <h3>Conference Reviewer</h3>
+          <ul>
+			  <li>Conference on Computer Vision and Pattern Recognition (CVPR)</li>
+
+<li>European Conference on Computer Vision (ECCV)</li>
+
+<li>Neural Information Processing Systems (NeurIPS)</li>
+
+<li>AAAI Conference on Artificial Intelligence (AAAI)</li>
+
+<li>International Joint Conference on Artificial Intelligence (IJCAI)</li>
+
+<li>Winter Conference on Applications of Computer Vision (WACV)</li>
+           
+          </ul>
+          <h3>Journal Reviewer</h3>
+          <ul>
+			  <li> IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</li>
+            <li>IEEE Transactions on Multimedia (TMM)</li>
+            <li>Pattern Recognition (PR)</li>
+            <li>Neural Networks (NN)</li>
+            <li>Expert Systems with Applications (ESWA)</li>
+            <li>Knowledge-Based Systems (KBS)</li>
+
+          </ul>
+        </section>
+
+		   <section id="experience" class="card">
+          <h2>Honors and Awards</h2>
+          
+          <ul>
+			<li>11/2025 – Third in 2025 人工智能赋能教育创新应用大赛</li>
+<li>11/2024 – Third in ICPR 2024 Multi-Modal Visual Pattern Recognition Challenge – Action Recognition Track, and get "Best Research paper"</li>
+<li>12/2023 – Third in 2023 长三角 (芜湖) 人工智能算法大赛</li>
+<li>10/2023 – National Graduate Scholarship</li>
+<li>08/2023 – Thrid in IFlytek Developer Competition – Stable Diffusion Identification Challenge</li>
+<li>07/2023 – Second in ICCV2023 Workshop challenge – VisDrone2023</li>
+<li>06/2023 – Second in CVPR2023 AVA Accessibility Vision and Autonomy Challenge – Segmentation Track</li>
+<li>06/2023 – Thrid in CVPR2023 AVA Accessibility Vision and Autonomy Challenge – Keypoint Track</li>
+<li>05/2023 – Third in FGVC10 Workshop at CVPR – PlantTraits2023</li>
+<li>07/2022 – First in ECV2022</li>
+
+          </ul>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div style="max-width: var(--max); margin: 0 auto;">
+      <div>© <span id="year"></span> Hongliang Zhang. All rights reserved.</div>
+      <div class="small">Last updated: <span id="updated"></span></div>
+    </div>
+  </footer>
+
+  <!-- BibTeX Modal -->
+  <div class="modal-backdrop" id="bibModal" role="dialog" aria-modal="true" aria-label="BibTeX viewer">
+    <div class="modal">
+      <div class="modal-head">
+        <p class="modal-title" id="bibTitle">BibTeX</p>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <button class="btn small" id="bibCopy" type="button">Copy</button>
+          <button class="btn small" id="bibClose" type="button">Close</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <pre id="bibText"></pre>
+        <p class="small" style="margin:10px 0 0 0;">Tip: 你只需要在数据里填 <code>bibtex</code> 字段即可自动启用。</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /********************
+     * ✅ DATA: News + Publications
+     * 你以后维护内容，只需要改这两块数组
+     ********************/
+
+    const NEWS = [
+      { date: "2025-09", label: "Sep. 2025", text: "One paper was accepted by Pattern Recognition." },
+      { date: "2024-12", label: "Dec. 2024", text: "One paper was accepted by AAAI 2025." },
+      { date: "2024-07", label: "Jul. 2024", text: "One paper was accepted by Pattern Recognition." }
+    ];
+
+    // Publication schema:
+    // {
+    //   year: 2025,
+    //   selected: true,           // ✅ Selected / Full list 控制
+    //   title: "...",
+    //   authors: "...(允许HTML)...",
+    //   venue: "...(允许HTML)...",
+    //   pdf: "https://...pdf",    // ✅ 可选：有就显示 PDF 按钮
+    //   code: "https://...repo",  // ✅ 可选：有就显示 Code 按钮
+    //   bibtex: "@inproceedings{...}" // ✅ 可选：有就显示 BibTeX 按钮（弹窗+复制）
+    // }
+
+    const PUBLICATIONS = {
+      conference: [
+        {
+          year: 2026,
+          selected: true,
+          title: "Adaptive Depth Lightweight RGB-T Tracking with Holistic Token Routing.",
+          authors: "Tian Ding, Hongtao Yang, Liangtao Shi, Jun Li, <b><u>Xiantao Hu✉</u></b>, Jian Yang, Ying Tai✉.",
+          venue: "<i>Conference on Computer Vision and Pattern Recognition (CVPR), 2026..</i>",
+          pdf: "",   // TODO: 填你的 PDF 链接
+          code: "",  // TODO: 填你的 Code 链接
+          bibtex: "" // TODO: 填 BibTeX 文本
+        },
+		  {
+          year: 2025,
+          selected: true,
+          title: "Exploiting Multimodal Spatial-temporal Patterns for Video Object Tracking.",
+          authors: "<b><u>Xiantao Hu</u></b>, Ying Tai✉, Xu Zhao, Chen Zhao, Zhenyu Zhang, Jun Li, Bineng Zhong, Jian Yang✉.",
+          venue: "<i>AAAI Conference on Artificial Intelligence (AAAI), Oral, 2025.</i>",
+          pdf: "https://arxiv.org/abs/2412.15691",   // TODO: 填你的 PDF 链接
+          code: "https://github.com/NJU-PCALab/STTrack",  // TODO: 填你的 Code 链接
+          bibtex: "" // TODO: 填 BibTeX 文本
+        },
+		   {
+          year: 2026,
+          selected: false,
+          title: "Dual-branch Distilled Transformer for Efficient Asymmetric UAV Tracking.",
+          authors: "Hongtao Yang, Bineng Zhong, Qihua Liang, Yaozong Zheng, Xiantao Hu, Yuanliang Xue, Shuxiang Song.",
+          venue: "<i>Conference on Computer Vision and Pattern Recognition (CVPR), 2026.</i>",
+          pdf: "",   // TODO: 填你的 PDF 链接
+          code: "",  // TODO: 填你的 Code 链接
+          bibtex: "" // TODO: 填 BibTeX 文本
+        },
+		  {
+          year: 2026,
+          selected: false,
+          title: "DVAR: Dynamic Visual Autoregressive Modeling for Image Super-Resolution.",
+          authors: "Yu Zheng, Kai Zhang, Wei Zhu, Qingguo Liu, Xiantao Hu, Jun Li, Jian Yang.",
+          venue: "<i>Conference on Computer Vision and Pattern Recognition (CVPR), 2026.</i>",
+          pdf: "",   // TODO: 填你的 PDF 链接
+          code: "",  // TODO: 填你的 Code 链接
+          bibtex: "" // TODO: 填 BibTeX 文本
+        },
+		    {
+          year: 2026,
+          selected: false,
+          title: "Motion-Aware Object Tracking via Motion and Geometry-Aware Cues.",
+          authors: "Hongtao Yang, Bineng Zhong, Qihua Liang, Xiantao Hu, Yufei Tan, Haiying Xia, Shuxiang Song.",
+          venue: "<i>AAAI Conference on Artificial Intelligence (AAAI), 2026.</i>",
+          pdf: "",   // TODO: 填你的 PDF 链接
+          code: "",  // TODO: 填你的 Code 链接
+          bibtex: "" // TODO: 填 BibTeX 文本
+        },
+		     {
+          year: 2026,
+          selected: false,
+          title: "CADTrack: Learning Contextual Aggregation with Deformable Alignment for Robust RGBT Tracking.",
+          authors: "Hao Li, Yuhao Wang, Xiantao Hu, Wenning Hao, Pingping Zhang, Dong Wang, Huchuan Lu.",
+          venue: "<i>AAAI Conference on Artificial Intelligence (AAAI), 2026.</i>",
+          pdf: "https://arxiv.org/abs/2511.17967",   // TODO: 填你的 PDF 链接
+          code: "https://github.com/IdolLab/CADTrack",  // TODO: 填你的 Code 链接
+          bibtex: "" // TODO: 填 BibTeX 文本
+        },
+
+		     {
+          year: 2025,
+          selected: false,
+          title: "Explicit Context Reasoning with Supervision for Visual Tracking.",
+          authors: "Fansheng Zeng, Bineng Zhong, Haiying Xia, Yufei Tan, Xiantao Hu, Liangtao Shi, Shuxiang Song.",
+          venue: "<i>ACM Multimedia (MM), 2025</i>",
+          pdf: https://arxiv.org/abs/2507.16191",   // TODO: 填你的 PDF 链接
+          code: "",  // TODO: 填你的 Code 链接
+          bibtex: "" // TODO: 填 BibTeX 文本
+        },
+		  
+      ],
+      journal: [
+			  { year: 2025, selected: true,
+          title: "Adaptive Perception for Unified Visual Multi-modal Object Tracking.",
+          authors: "<b><u>Xiantao Hu</u></b>, Bineng Zhong✉, Qihua Liang, Liangtao Shi, Zhiyi Mo, Ying Tai, Jian Yang.",
+          venue: "<i>IEEE Transactions on Artificial Intelligence (TAI), 2025.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+			  { year: 2024, selected: true,
+          title: "Towards Modalities Correlation for RGB-T Tracking.",
+          authors: "<b><u>Xiantao Hu</u></b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li.",
+          venue: "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+				  { year: 2023, selected: true,
+          title: "Transformer Tracking via Frequency Fusion.",
+          authors: "<b><u>Xiantao Hu</u></b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li, Rongrong Ji.",
+          venue: "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2023.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+			  { year: 2026, selected: false,
+          title: "Digital Twin–Enabled Mobility-Aware Cooperative Caching in Vehicular Edge Computing.",
+          authors: "Jiahao Zeng, Zhenkui Shi, Chunpei Li, Mengkai Yan, Hongliang Zhang, Sihan Chen, Xiantao Hu, Xianxian Li.",
+          venue: "<i>IEEE Transactions on Mobile Computing (TMC), 2026.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+        { year: 2026, selected: false,
+          title: "DVDPEC: Driving-Video Dehazing via Position Embedding-based Codebook.",
+          authors: "Yu Zheng, Wenxuan Fang, Xiantao Hu, Junkai Fan, Jiangwei Weng, Jun Li, Kai Zhang, Jian Yang.",
+          venue: "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2026.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+			       { year: 2025, selected: false,
+          title: "Fast Adversarial Training with Weak-to-Strong Spatial-Temporal Consistency in the Frequency Domain on Videos.",
+          authors: "Songping Wang, Hanqing Liu, Yueming Lyu, Xiantao Hu, Ziwen He, Wei Wang, Caifeng Shan, Liang Wang.",
+          venue: "<i>IEEE Transactions on Information Forensics & Security (TIFS), 2025.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+			{ year: 2025, selected: false,
+          title: "Learning Multi-scale Spatial-frequency Features for Image Denoising.",
+          authors: "Xu Zhao, Chen Zhao, Xiantao Hu, Hongliang Zhang, Ying Tai, Jian Yang.",
+          venue: "<i>Pattern Recognition (PR), 2025.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+			{ year: 2025, selected: false,
+          title: "Mamba Adapter: Efficient Multi-Modal Fusion for Vision-Language Tracking.",
+          authors: "Liangtao Shi, Bineng Zhong, Qihua Liang, Xiantao Hu, Zhiyi Mo, Shuxiang Song.",
+          venue: "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2025.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+				{ year: 2025, selected: false,
+          title: "SwimVG: Step-wise Multimodal Fusion and Adaption for Visual Grounding.",
+          authors: "Liangtao Shi, Ting Liu, Xiantao Hu, Yue Hu, Quanjun Yin, Richang Hong.",
+          venue: "<i>IEEE Transactions on Multimedia (TMM), 2025.</i>",
+          pdf:"", code:"", bibtex:""
+        },
+      ]
+    };
+
+    /********************
+     * ✅ Render: News
+     ********************/
+    function escapeHtml(s){
+      return String(s).replace(/[&<>"']/g, c => ({
+        "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+      }[c]));
+    }
+    function renderNews(){
+      const root = document.getElementById("newsTimeline");
+      if(!root) return;
+      const sorted = [...NEWS].sort((a,b)=> (b.date||"").localeCompare(a.date||""));
+      root.innerHTML = sorted.map(item => `
+        <li class="t-item">
+          <span class="t-dot" aria-hidden="true"></span>
+          <div class="t-head"><span class="t-time">${escapeHtml(item.label || item.date || "")}</span></div>
+          <div class="t-body">${escapeHtml(item.text || "")}</div>
+        </li>
+      `).join("");
+    }
+
+    /********************
+     * ✅ Publications: view switch + search + group + collapsible + buttons
+     ********************/
+    function stripTags(html){
+      const div = document.createElement("div");
+      div.innerHTML = html;
+      return (div.textContent || div.innerText || "").trim();
+    }
+    function pubToText(it){
+      return [
+        it.year, it.selected ? "selected" : "",
+        it.title, stripTags(it.authors||""), stripTags(it.venue||"")
+      ].join(" ").toLowerCase();
+    }
+    function groupByYear(items){
+      const map = new Map();
+      for(const it of items){
+        const y = Number(it.year) || 0;
+        if(!map.has(y)) map.set(y, []);
+        map.get(y).push(it);
+      }
+      const years = Array.from(map.keys()).sort((a,b)=>b-a);
+      return { map, years };
+    }
+
+    // state
+    let pubView = "selected"; // "selected" | "full"
+    let pubQuery = "";
+
+    function renderPubGroup(containerId, items){
+      const root = document.getElementById(containerId);
+      if(!root) return;
+
+      // filter by view
+      let filtered = items;
+      if(pubView === "selected"){
+        filtered = filtered.filter(it => !!it.selected);
+      }
+
+      // filter by query
+      const q = (pubQuery || "").trim().toLowerCase();
+      if(q){
+        filtered = filtered.filter(it => pubToText(it).includes(q));
+      }
+
+      if(filtered.length === 0){
+        root.innerHTML = `<p class="small">No results.</p>`;
+        return;
+      }
+
+      const { map, years } = groupByYear(filtered);
+
+      // default open: latest 3 years
+      const openYears = new Set(years.slice(0, 3));
+
+      root.innerHTML = years.map(y => {
+        const list = map.get(y) || [];
+        const openAttr = openYears.has(y) ? "open" : "";
+        const count = list.length;
+
+        const itemsHtml = list.map((it, idx) => {
+          const hasPdf = !!(it.pdf && it.pdf.trim());
+          const hasCode = !!(it.code && it.code.trim());
+          const hasBib = !!(it.bibtex && it.bibtex.trim());
+          const star = it.selected ? `<span class="star" title="Selected">★ Selected</span>` : "";
+
+          // Provide placeholder buttons even if empty? (你要求“按钮位”，我这里选择：没填就不显示按钮，避免假链接)
+          const actions = `
+            <div class="pub-actions" aria-label="Paper links">
+              ${hasPdf ? `<a class="chip" href="${escapeAttr(it.pdf)}" target="_blank" rel="noopener noreferrer">PDF</a>` : ""}
+              ${hasCode ? `<a class="chip" href="${escapeAttr(it.code)}" target="_blank" rel="noopener noreferrer">Code</a>` : ""}
+              ${hasBib ? `<button class="chip" type="button" data-bib="1" data-title="${escapeAttr(it.title || "BibTeX")}" data-key="${escapeAttr(containerId + "-" + y + "-" + idx)}">BibTeX</button>` : ""}
+            </div>
+          `;
+
+          // store bibtex in a map key (avoid putting big text in attribute)
+          if(hasBib){
+            bibStore.set(containerId + "-" + y + "-" + idx, it.bibtex);
+          }
+
+          return `
+            <li class="pub-item">
+              ${escapeHtml(it.title || "")}${star}<br>
+              <span>${it.authors || ""}</span><br>
+              <span>${it.venue || ""}</span>
+              ${actions}
+            </li>
+          `;
+        }).join("");
+
+        return `
+          <details class="pub-year" ${openAttr} data-year="${y}">
+            <summary>
+              <span>${y}</span>
+              <span class="count">${count}</span>
+            </summary>
+            <ol class="pub-list">${itemsHtml}</ol>
+          </details>
+        `;
+      }).join("");
+    }
+
+    function renderAllPubs(){
+      // bibStore reset before render
+      bibStore.clear();
+      renderPubGroup("pubConf", PUBLICATIONS.conference);
+      renderPubGroup("pubJour", PUBLICATIONS.journal);
+      wireBibButtons();
+    }
+
+    function setView(view){
+      pubView = view;
+      document.getElementById("viewSelected").setAttribute("aria-pressed", String(view==="selected"));
+      document.getElementById("viewFull").setAttribute("aria-pressed", String(view==="full"));
+      renderAllPubs();
+    }
+
+    function setAllDetails(open){
+      document.querySelectorAll("details.pub-year").forEach(d => d.open = open);
+    }
+
+    /********************
+     * ✅ BibTeX modal + store
+     ********************/
+    const bibStore = new Map();
+
+    function escapeAttr(s){
+      return String(s).replace(/"/g, "&quot;");
+    }
+
+    function wireBibButtons(){
+      document.querySelectorAll('[data-bib="1"]').forEach(btn => {
+        btn.addEventListener("click", () => {
+          const key = btn.getAttribute("data-key");
+          const title = btn.getAttribute("data-title") || "BibTeX";
+          const bib = bibStore.get(key) || "";
+          openBibModal(title, bib);
+        });
+      });
+    }
+
+    const bibModal = document.getElementById("bibModal");
+    const bibTitle = document.getElementById("bibTitle");
+    const bibText = document.getElementById("bibText");
+    const bibCopy = document.getElementById("bibCopy");
+    const bibClose = document.getElementById("bibClose");
+
+    function openBibModal(title, text){
+      if(!bibModal) return;
+      bibTitle.textContent = title;
+      bibText.textContent = text || "";
+      bibModal.classList.add("open");
+      // focus for accessibility
+      bibClose.focus();
+    }
+    function closeBibModal(){
+      if(!bibModal) return;
+      bibModal.classList.remove("open");
+    }
+
+    if(bibClose) bibClose.addEventListener("click", closeBibModal);
+    if(bibModal) bibModal.addEventListener("click", (e) => {
+      if(e.target === bibModal) closeBibModal();
+    });
+    document.addEventListener("keydown", (e) => {
+      if(e.key === "Escape" && bibModal && bibModal.classList.contains("open")) closeBibModal();
+    });
+
+    if(bibCopy) bibCopy.addEventListener("click", async () => {
+      const text = (bibText && bibText.textContent) ? bibText.textContent : "";
+      try{
+        await navigator.clipboard.writeText(text);
+        bibCopy.textContent = "Copied!";
+        setTimeout(()=> bibCopy.textContent = "Copy", 900);
+      }catch(err){
+        // fallback: select text
+        const r = document.createRange();
+        r.selectNodeContents(bibText);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(r);
+        bibCopy.textContent = "Select to copy";
+        setTimeout(()=> bibCopy.textContent = "Copy", 900);
+      }
+    });
+
+    /********************
+     * ✅ Nav UX
+     ********************/
+    function setupNav(){
+      const now = new Date();
+      const yearEl = document.getElementById("year");
+      const updEl = document.getElementById("updated");
+      if(yearEl) yearEl.textContent = now.getFullYear();
+      if(updEl) updEl.textContent = now.toISOString().slice(0,10);
+
+      // Mobile menu toggle
+      const btn = document.getElementById("menuBtn");
+      const drawer = document.getElementById("mobileNav");
+      if (btn && drawer) {
+        btn.addEventListener("click", () => {
+          const isOpen = drawer.classList.toggle("open");
+          btn.setAttribute("aria-expanded", String(isOpen));
+        });
+        drawer.addEventListener("click", (e) => {
+          const a = e.target.closest("a");
+          if (!a) return;
+          drawer.classList.remove("open");
+          btn.setAttribute("aria-expanded", "false");
+        });
+      }
+
+      // Active link highlight
+      const sections = Array.from(document.querySelectorAll("main section[id]"));
+      const allNavLinks = Array.from(document.querySelectorAll("a.navlink"));
+      const setActive = (id) => {
+        allNavLinks.forEach(a => a.setAttribute(
+          "aria-current",
+          a.getAttribute("href") === ("#" + id) ? "true" : "false"
+        ));
+      };
+      const io = new IntersectionObserver((entries) => {
+        const visible = entries.filter(e => e.isIntersecting)
+                               .sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: "-35% 0px -55% 0px", threshold: [0.1,0.2,0.35,0.5,0.75] });
+      sections.forEach(s => io.observe(s));
+    }
+
+    /********************
+     * ✅ Boot
+     ********************/
+    renderNews();
+    setupNav();
+
+    // pub UI wiring
+    const pubSearch = document.getElementById("pubSearch");
+    const viewSelected = document.getElementById("viewSelected");
+    const viewFull = document.getElementById("viewFull");
+    const expandAll = document.getElementById("expandAll");
+    const collapseAll = document.getElementById("collapseAll");
+
+    renderAllPubs();
+    setView("selected"); // default
+
+    if(viewSelected) viewSelected.addEventListener("click", ()=> setView("selected"));
+    if(viewFull) viewFull.addEventListener("click", ()=> setView("full"));
+
+    if(pubSearch){
+      pubSearch.addEventListener("input", () => {
+        pubQuery = pubSearch.value || "";
+        renderAllPubs();
+      });
+    }
+    if(expandAll) expandAll.addEventListener("click", () => setAllDetails(true));
+    if(collapseAll) collapseAll.addEventListener("click", () => setAllDetails(false));
+  </script>
+</body>
+</html>
