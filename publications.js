@@ -22,7 +22,10 @@ const PUBLICATIONS = {
       "venue": "<i>Conference on Neural Information Processing Systems (NeurIPS), 2026.</i>",
       "pdf": "",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/toporefine-figure1.jpg",
+      "imageFull": "assets/papers/toporefine-figure1.jpg",
+      "imageAlt": "Figure 1: TopoRefine topology-aware correspondence and residual identity refinement comparisons"
     },
     {
       "year": 2026,

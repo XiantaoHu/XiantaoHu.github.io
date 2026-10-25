@@ -43,8 +43,8 @@ Access was provided by Nanjing University of Science and Technology using the ow
 | Motion-Aware / MoDTrack | Figure 3, page 3: complete framework with depth cues, motion dictionary, decoding, and final prediction. Rendered from the original AAAI PDF with all annotations retained. | https://ojs.aaai.org/index.php/AAAI/article/download/38144/42106#page=3 |
 | SHD-Net | Figure 3: full hierarchical feature extraction, semantic disentanglement, and confidence-weighted fusion architecture. High-resolution image obtained after authorized Nanjing University of Science and Technology access to the complete article. | https://www.sciencedirect.com/science/article/pii/S1566253526002253 ; https://ars.els-cdn.com/content/image/1-s2.0-S1566253526002253-gr3_lrg.jpg |
 
-## Entry left without an image
+## TopoRefine figure supplied by the homepage owner
 
-- TopoRefine: OpenReview requires account login and no usable verified figure was obtained. The owner's requested blank frame is retained.
+- Figure 1, page 2 of the owner-provided `19972_TopoRefine_Topology_Awar.pdf`, added at the owner's explicit request. Both panels (a) and (b), prompts, and image labels are preserved. The complete PDF is not included in the website package.
 
-The final list has 22 papers, 21 authentic figures, and 1 blank frame.
+The final list has 22 papers and 22 authentic figures.
