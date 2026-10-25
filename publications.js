@@ -8,8 +8,11 @@ const PUBLICATIONS = {
       "authors": "<b>Xiantao Hu</b>, Ying Tai, Jinxia Xie, Bineng Zhong, Guangwei Gao, Jianjun Qian, Jian Yang.",
       "venue": "<i>Conference on Neural Information Processing Systems (NeurIPS), 2026.</i>",
       "pdf": "",
-      "code": "",
-      "bibtex": ""
+      "code": "https://github.com/NJU-PCALab/TETrack3D",
+      "bibtex": "",
+      "image": "assets/papers/tetrack3d-framework.jpg",
+      "imageFull": "assets/papers/tetrack3d-framework.jpg",
+      "imageAlt": "TETrack3D framework with temporal KV caching and state evolution supervision"
     },
     {
       "year": 2026,
@@ -53,9 +56,12 @@ const PUBLICATIONS = {
       "title": "Dual-branch Distilled Transformer for Efficient Asymmetric UAV Tracking.",
       "authors": "Hongtao Yang, Bineng Zhong, Qihua Liang, Yaozong Zheng, Xiantao Hu, Yuanliang Xue, Shuxiang Song.",
       "venue": "<i>Conference on Computer Vision and Pattern Recognition (CVPR), Highlight, 2026.</i>",
-      "pdf": "",
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_Dual-branch_Distilled_Transformer_for_Efficient_Asymmetric_UAV_Tracking_CVPR_2026_paper.pdf",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/eatrack-figure2.jpg",
+      "imageFull": "assets/papers/eatrack-figure2.jpg",
+      "imageAlt": "Figure 2: EATrack teacher-guided training and asymmetric inference"
     },
     {
       "year": 2026,
@@ -63,9 +69,12 @@ const PUBLICATIONS = {
       "title": "DVAR: Dynamic Visual Autoregressive Modeling for Image Super-Resolution.",
       "authors": "Yu Zheng, Kai Zhang, Wei Zhu, Qingguo Liu, Xiantao Hu, Jun Li, Jian Yang.",
       "venue": "<i>Conference on Computer Vision and Pattern Recognition (CVPR), 2026.</i>",
-      "pdf": "",
-      "code": "",
-      "bibtex": ""
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zheng_DVAR_Dynamic_Visual_Autoregressive_Modeling_for_Image_Super-Resolution_CVPR_2026_paper.pdf",
+      "code": "https://github.com/YuZheng9/DVAR",
+      "bibtex": "",
+      "image": "assets/papers/dvar-figure2.jpg",
+      "imageFull": "assets/papers/dvar-figure2.jpg",
+      "imageAlt": "Figure 2: DVAR dynamic visual autoregressive super-resolution framework"
     },
     {
       "year": 2026,
@@ -73,9 +82,12 @@ const PUBLICATIONS = {
       "title": "Motion-Aware Object Tracking via Motion and Geometry-Aware Cues.",
       "authors": "Hongtao Yang, Bineng Zhong, Qihua Liang, Xiantao Hu, Yufei Tan, Haiying Xia, Shuxiang Song.",
       "venue": "<i>AAAI Conference on Artificial Intelligence (AAAI), 2026.</i>",
-      "pdf": "",
+      "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/38144/42106",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/motion-figure3.jpg",
+      "imageFull": "assets/papers/motion-figure3.jpg",
+      "imageAlt": "Figure 3: MoDTrack motion-pattern matching and geometry-aware tracking framework"
     },
     {
       "year": 2026,
@@ -98,7 +110,10 @@ const PUBLICATIONS = {
       "venue": "<i>ACM Multimedia (MM), 2025</i>",
       "pdf": "https://arxiv.org/abs/2507.16191",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/rstrack-figure2.jpg",
+      "imageFull": "assets/papers/rstrack-figure2.jpg",
+      "imageAlt": "Figure 2: RSTrack main pipeline and supervised state compression"
     }
   ],
   "journal": [
@@ -108,9 +123,12 @@ const PUBLICATIONS = {
       "title": "Curriculum Adaptation for One-Stream RGB–T Tracking.",
       "authors": "<b>Xiantao Hu</b>, Fansheng Zeng, Bineng Zhong, Zhangyong Tang, Wenxuan Fang, Jun Li, Ying Tai✉, Jian Yang✉.",
       "venue": "<i>Pattern Recognition (PR), 2026.</i>",
-      "pdf": "",
+      "pdf": "https://www.sciencedirect.com/science/article/pii/S0031320326004607",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/cast-figure2.jpg",
+      "imageFull": "assets/papers/cast-figure2.jpg",
+      "imageAlt": "Figure 2: CAST architecture and staged curriculum training"
     },
     {
       "year": 2025,
@@ -121,9 +139,9 @@ const PUBLICATIONS = {
       "pdf": "https://arxiv.org/abs/2502.06583",
       "code": "",
       "bibtex": "",
-      "image": "assets/papers/aptrack-thumb.jpg",
-      "imageAlt": "APTrack framework and adaptive modality interaction module",
-      "imageFull": "https://arxiv.org/html/2502.06583v1/structure.png"
+      "image": "assets/papers/aptrack-figure1.jpg",
+      "imageAlt": "Figure 1: APTrack unified RGB-Depth, RGB-TIR, and RGB-Event tracking",
+      "imageFull": "assets/papers/aptrack-figure1.jpg"
     },
     {
       "year": 2024,
@@ -131,9 +149,12 @@ const PUBLICATIONS = {
       "title": "Towards Modalities Correlation for RGB-T Tracking.",
       "authors": "<b>Xiantao Hu</b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li.",
       "venue": "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.</i>",
-      "pdf": "https://ieeexplore.ieee.org/abstract/document/10517645/",
-      "code": "https://github.com/GXNU-ZhongLab/MCTrack",
-      "bibtex": ""
+      "pdf": "",
+      "code": "",
+      "bibtex": "",
+      "image": "assets/papers/mctrack-figure1.jpg",
+      "imageFull": "assets/papers/mctrack-figure1.jpg",
+      "imageAlt": "Figure 1: RGB and thermal modality robustness under visibility and fuzziness challenges"
     },
     {
       "year": 2023,
@@ -141,9 +162,12 @@ const PUBLICATIONS = {
       "title": "Transformer Tracking via Frequency Fusion.",
       "authors": "<b>Xiantao Hu</b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li, Rongrong Ji.",
       "venue": "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2023.</i>",
-      "pdf": "",
+      "pdf": "https://ieeexplore.ieee.org/document/10163861",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/fftrack-figure1.jpg",
+      "imageFull": "assets/papers/fftrack-figure1.jpg",
+      "imageAlt": "Figure 1: OSTrack and FFTrack frequency feature visualizations"
     },
     {
       "year": 2026,
@@ -151,9 +175,12 @@ const PUBLICATIONS = {
       "title": "Digital Twin–Enabled Mobility-Aware Cooperative Caching in Vehicular Edge Computing.",
       "authors": "Jiahao Zeng, Zhenkui Shi✉, Chunpei Li, Mengkai Yan, Hongliang Zhang, Sihan Chen, Xiantao Hu✉, Xianxian Li.",
       "venue": "<i>IEEE Transactions on Mobile Computing (TMC), 2026.</i>",
-      "pdf": "",
+      "pdf": "https://arxiv.org/abs/2603.06653",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/dapr-figure1.jpg",
+      "imageFull": "assets/papers/dapr-figure1.jpg",
+      "imageAlt": "Figure 1: Digital twin-driven edge caching for vehicle networking"
     },
     {
       "year": 2026,
@@ -161,9 +188,12 @@ const PUBLICATIONS = {
       "title": "DVDPEC: Driving-Video Dehazing via Position Embedding-based Codebook.",
       "authors": "Yu Zheng, Wenxuan Fang, Xiantao Hu, Junkai Fan, Jiangwei Weng, Jun Li, Kai Zhang, Jian Yang.",
       "venue": "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2026.</i>",
-      "pdf": "",
+      "pdf": "https://ieeexplore.ieee.org/document/11358748",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/dvdpec-figure1.jpg",
+      "imageFull": "assets/papers/dvdpec-figure1.jpg",
+      "imageAlt": "Figure 1: Driving video dehazing comparison with DVDPEC"
     },
     {
       "year": 2026,
@@ -171,9 +201,12 @@ const PUBLICATIONS = {
       "title": "CASS: A Context-Aware Memory Framework with Spectral-Spatial Modulation for UAV Multispectral Video Tracking.",
       "authors": "Yuzeng Chen, Qiangqiang Yuan, Bineng Zhong, Xiantao Hu, Jie Zhou, Xi Zhao, Xin Su, Yuqi Tang, Liangpei Zhang.",
       "venue": "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2026.</i>",
-      "pdf": "",
+      "pdf": "https://ieeexplore.ieee.org/document/11586086",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/cass-figure4.jpg",
+      "imageFull": "assets/papers/cass-figure4.jpg",
+      "imageAlt": "Figure 4: CASS spectral-spatial modulation and context state-space reasoning framework"
     },
     {
       "year": 2026,
@@ -181,9 +214,12 @@ const PUBLICATIONS = {
       "title": "Disentangling Identity from Appearance: A Semantic-Hierarchical Multi-Level Fusion Framework for Cloth-Invariant Person Re-Identification.",
       "authors": "Enhao Ning; Libin Wu; Sheng Xie; Jie Yang; Xiantao Hu; Zhipeng Hu; Huang Zhang; Hemant Ghayvat; Xin Ning.",
       "venue": "<i>Information Fusion, 2026.</i>",
-      "pdf": "",
+      "pdf": "https://www.sciencedirect.com/science/article/pii/S1566253526002253",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/shdnet-figure3.jpg",
+      "imageFull": "assets/papers/shdnet-figure3.jpg",
+      "imageAlt": "Figure 3: SHD-Net hierarchical feature extraction, semantic disentanglement, and adaptive fusion"
     },
     {
       "year": 2026,
@@ -191,9 +227,12 @@ const PUBLICATIONS = {
       "title": "Spiking Pyramid Wavelet Transformation for High-efficient and Low-energy Image Restoration.",
       "authors": " Chen Zhao, Xiantao Hu, Song Wu, Qian Wang, Chen Wu, Rui Xie, Jia Yang, Ying Tai.",
       "venue": "<i>Pattern Recognition, 2026.</i>",
-      "pdf": "",
+      "pdf": "https://arxiv.org/abs/2606.18644",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/spwm-figure3.jpg",
+      "imageFull": "assets/papers/spwm-figure3.jpg",
+      "imageAlt": "Figure 3: Spiking pyramid wavelet model for image restoration"
     },
     {
       "year": 2025,
@@ -201,9 +240,12 @@ const PUBLICATIONS = {
       "title": "Fast Adversarial Training with Weak-to-Strong Spatial-Temporal Consistency in the Frequency Domain on Videos.",
       "authors": "Songping Wang, Hanqing Liu, Yueming Lyu, Xiantao Hu, Ziwen He, Wei Wang, Caifeng Shan, Liang Wang.",
       "venue": "<i>IEEE Transactions on Information Forensics & Security (TIFS), 2025.</i>",
-      "pdf": "",
+      "pdf": "https://ieeexplore.ieee.org/document/11311462",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/vfat-figure2.jpg",
+      "imageFull": "assets/papers/vfat-figure2.jpg",
+      "imageAlt": "Figure 2: VFAT-WS video adversarial training pipeline"
     },
     {
       "year": 2025,
@@ -211,9 +253,12 @@ const PUBLICATIONS = {
       "title": "Learning Multi-scale Spatial-frequency Features for Image Denoising.",
       "authors": "Xu Zhao, Chen Zhao, Xiantao Hu, Hongliang Zhang, Ying Tai, Jian Yang.",
       "venue": "<i>Pattern Recognition (PR), 2025.</i>",
-      "pdf": "",
+      "pdf": "https://arxiv.org/abs/2506.16307",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/madnet-figure3.jpg",
+      "imageFull": "assets/papers/madnet-figure3.jpg",
+      "imageAlt": "Figure 3: MADNet multi-scale spatial-frequency image denoising architecture"
     },
     {
       "year": 2025,
@@ -221,9 +266,12 @@ const PUBLICATIONS = {
       "title": "Mamba Adapter: Efficient Multi-Modal Fusion for Vision-Language Tracking.",
       "authors": "Liangtao Shi, Bineng Zhong, Qihua Liang, Xiantao Hu, Zhiyi Mo, Shuxiang Song.",
       "venue": "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2025.</i>",
-      "pdf": "",
+      "pdf": "https://ieeexplore.ieee.org/document/10948517",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/mavlt-figure2.jpg",
+      "imageFull": "assets/papers/mavlt-figure2.jpg",
+      "imageAlt": "Figure 2: MAVLT vision-language tracking architecture with Mamba adapters"
     },
     {
       "year": 2025,
@@ -231,9 +279,12 @@ const PUBLICATIONS = {
       "title": "SwimVG: Step-wise Multimodal Fusion and Adaption for Visual Grounding.",
       "authors": "Liangtao Shi, Ting Liu, Xiantao Hu, Yue Hu, Quanjun Yin, Richang Hong.",
       "venue": "<i>IEEE Transactions on Multimedia (TMM), 2025.</i>",
-      "pdf": "",
-      "code": "",
-      "bibtex": ""
+      "pdf": "https://arxiv.org/abs/2502.16786",
+      "code": "https://github.com/liuting20/SwimVG",
+      "bibtex": "",
+      "image": "assets/papers/swimvg-figure2.jpg",
+      "imageFull": "assets/papers/swimvg-figure2.jpg",
+      "imageAlt": "Figure 2: SwimVG step-wise multimodal fusion and adaptation architecture"
     }
   ]
 };
