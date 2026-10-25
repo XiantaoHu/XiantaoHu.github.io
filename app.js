@@ -18,8 +18,8 @@
     const venue = escape(plain(p.venue)).replace(/\b(Highlight|Oral)\b/g,'<span class="distinction">$1</span>');
     const actions = [['Paper',p.pdf],['Code',p.code]].filter(([,u])=>u).map(([label,url])=>`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">[${label}]</a>`);
     if(p.bibtex) actions.push(`<button type="button" data-bib="${all.indexOf(p)}">[BibTeX]</button>`);
-    const thumbnail = p.image ? `<a class="paper-thumbnail" href="${escape(p.imageFull || p.image)}" target="_blank" rel="noopener noreferrer" aria-label="View full-size figure for ${escape(p.title)}"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" width="220" height="140" loading="lazy" decoding="async"></a>` : '';
-    return `<article class="publication${p.image ? ' has-thumbnail' : ''}">${thumbnail}<div class="paper-summary"><h3 class="paper-title">${title}${actions.length ? ` <span class="paper-links">${actions.join(' ')}</span>` : ''}</h3><p class="authors">${authors}</p><p class="venue">${venue}</p></div></article>`;
+    const thumbnail = p.image ? `<a class="paper-thumbnail" href="${escape(p.imageFull || p.image)}" target="_blank" rel="noopener noreferrer" aria-label="View full-size figure for ${escape(p.title)}"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" width="220" height="140" loading="lazy" decoding="async"></a>` : '<div class="paper-thumbnail paper-placeholder" aria-hidden="true"></div>';
+    return `<article class="publication has-thumbnail">${thumbnail}<div class="paper-summary"><h3 class="paper-title">${title}${actions.length ? ` <span class="paper-links">${actions.join(' ')}</span>` : ''}</h3><p class="authors">${authors}</p><p class="venue">${venue}</p></div></article>`;
   }
   function matches(p, q) {
     return !q || [p.title, plain(p.authors), plain(p.venue), p.year].join(' ').toLowerCase().includes(q);

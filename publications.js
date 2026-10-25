@@ -27,9 +27,12 @@ const PUBLICATIONS = {
       "title": "Adaptive Depth Lightweight RGB-T Tracking with Holistic Token Routing.",
       "authors": "Tian Ding, Hongtao Yang, Liangtao Shi,  Jun Li, <b>Xiantao Hu✉</b>, Jian Yang, Ying Tai✉.",
       "venue": "<i>Conference on Computer Vision and Pattern Recognition (CVPR), Highlight, 2026.</i>",
-      "pdf": "",
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/Ding_Adaptive_Depth_Lightweight_RGB-T_Tracking_with_Holistic_Token_Routing_CVPR_2026_paper.pdf",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/adtrack-figure1.jpg",
+      "imageAlt": "Figure 1: ADTrack success rate versus speed on LasHeR",
+      "imageFull": "assets/papers/adtrack-figure1.jpg"
     },
     {
       "year": 2025,
@@ -130,10 +133,7 @@ const PUBLICATIONS = {
       "venue": "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.</i>",
       "pdf": "https://ieeexplore.ieee.org/abstract/document/10517645/",
       "code": "https://github.com/GXNU-ZhongLab/MCTrack",
-      "bibtex": "",
-      "image": "assets/papers/mctrack-thumb.jpg",
-      "imageAlt": "MCTrack framework for RGB and thermal modality correlation",
-      "imageFull": "https://raw.githubusercontent.com/GXNU-ZhongLab/MCTrack/main/pip.jpg"
+      "bibtex": ""
     },
     {
       "year": 2023,
