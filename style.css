@@ -53,7 +53,7 @@ strong,b{font-weight:600}
 .authors{font-size:13px;line-height:1.65;margin-bottom:3px}
 .venue{font-size:13px;line-height:1.6;margin-bottom:3px}
 .distinction{color:#b34a36;font-weight:600}
-.paper-links{font-size:12px;font-weight:400;margin-left:5px;line-height:1.8}
+.paper-links{font-size:13px;font-weight:400;margin-left:5px;line-height:1.8;white-space:nowrap}
 .paper-links a,.paper-links button{display:inline-block;white-space:nowrap}
 .paper-title .paper-links a{color:var(--link)}
 .paper-links button{border:0;padding:0;background:transparent;color:var(--link);font:inherit}
