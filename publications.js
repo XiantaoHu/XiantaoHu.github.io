@@ -39,7 +39,10 @@ const PUBLICATIONS = {
       "venue": "<i>AAAI Conference on Artificial Intelligence (AAAI), Oral, 2025.</i>",
       "pdf": "https://arxiv.org/abs/2412.15691",
       "code": "https://github.com/NJU-PCALab/STTrack",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/sttrack-thumb.jpg",
+      "imageAlt": "STTrack framework for multimodal spatial-temporal tracking",
+      "imageFull": "https://raw.githubusercontent.com/NJU-PCALab/STTrack/main/assets/structure.png"
     },
     {
       "year": 2026,
@@ -79,7 +82,10 @@ const PUBLICATIONS = {
       "venue": "<i>AAAI Conference on Artificial Intelligence (AAAI), 2026.</i>",
       "pdf": "https://arxiv.org/abs/2511.17967",
       "code": "https://github.com/IdolLab/CADTrack",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/cadtrack-thumb.jpg",
+      "imageAlt": "CADTrack framework with contextual aggregation and deformable alignment",
+      "imageFull": "https://raw.githubusercontent.com/IdolLab/CADTrack/main/assets/pipline.jpg"
     },
     {
       "year": 2025,
@@ -109,9 +115,12 @@ const PUBLICATIONS = {
       "title": "Adaptive Perception for Unified Visual Multi-modal Object Tracking.",
       "authors": "<b>Xiantao Hu</b>, Bineng Zhong✉, Qihua Liang, Liangtao Shi, Zhiyi Mo, Ying Tai, Jian Yang.",
       "venue": "<i>IEEE Transactions on Artificial Intelligence (TAI), 2025.</i>",
-      "pdf": "",
+      "pdf": "https://arxiv.org/abs/2502.06583",
       "code": "",
-      "bibtex": ""
+      "bibtex": "",
+      "image": "assets/papers/aptrack-thumb.jpg",
+      "imageAlt": "APTrack framework and adaptive modality interaction module",
+      "imageFull": "https://arxiv.org/html/2502.06583v1/structure.png"
     },
     {
       "year": 2024,
@@ -119,9 +128,12 @@ const PUBLICATIONS = {
       "title": "Towards Modalities Correlation for RGB-T Tracking.",
       "authors": "<b>Xiantao Hu</b>, Bineng Zhong✉, Qihua Liang, Shengping Zhang, Ning Li, Xianxian Li.",
       "venue": "<i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2024.</i>",
-      "pdf": "",
-      "code": "",
-      "bibtex": ""
+      "pdf": "https://ieeexplore.ieee.org/abstract/document/10517645/",
+      "code": "https://github.com/GXNU-ZhongLab/MCTrack",
+      "bibtex": "",
+      "image": "assets/papers/mctrack-thumb.jpg",
+      "imageAlt": "MCTrack framework for RGB and thermal modality correlation",
+      "imageFull": "https://raw.githubusercontent.com/GXNU-ZhongLab/MCTrack/main/pip.jpg"
     },
     {
       "year": 2023,

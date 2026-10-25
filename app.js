@@ -13,13 +13,13 @@
   const escape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const plain = s => String(s || '').replace(/<[^>]*>/g, '');
   function renderPaper(p) {
-    const url = p.pdf || p.code;
-    const title = url ? `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(p.title)}</a>` : escape(p.title);
+    const title = escape(p.title);
     const authors = escape(plain(p.authors)).replace(/Xiantao Hu/g,'<strong>Xiantao Hu</strong>');
     const venue = escape(plain(p.venue)).replace(/\b(Highlight|Oral)\b/g,'<span class="distinction">$1</span>');
-    const actions = [['Paper',p.pdf],['Code',p.code]].filter(([,u])=>u).map(([label,url])=>`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`);
-    if(p.bibtex) actions.push(`<button type="button" data-bib="${all.indexOf(p)}">BibTeX</button>`);
-    return `<article class="publication"><h3 class="paper-title">${title}</h3><p class="authors">${authors}</p><p class="venue">${venue}</p>${actions.length ? `<p class="paper-links">${actions.join('<span aria-hidden="true"> / </span>')}</p>` : ''}</article>`;
+    const actions = [['Paper',p.pdf],['Code',p.code]].filter(([,u])=>u).map(([label,url])=>`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">[${label}]</a>`);
+    if(p.bibtex) actions.push(`<button type="button" data-bib="${all.indexOf(p)}">[BibTeX]</button>`);
+    const thumbnail = p.image ? `<a class="paper-thumbnail" href="${escape(p.imageFull || p.image)}" target="_blank" rel="noopener noreferrer" aria-label="View full-size figure for ${escape(p.title)}"><img src="${escape(p.image)}" alt="${escape(p.imageAlt)}" width="220" height="140" loading="lazy" decoding="async"></a>` : '';
+    return `<article class="publication${p.image ? ' has-thumbnail' : ''}">${thumbnail}<div class="paper-summary"><h3 class="paper-title">${title}${actions.length ? ` <span class="paper-links">${actions.join(' ')}</span>` : ''}</h3><p class="authors">${authors}</p><p class="venue">${venue}</p></div></article>`;
   }
   function matches(p, q) {
     return !q || [p.title, plain(p.authors), plain(p.venue), p.year].join(' ').toLowerCase().includes(q);
