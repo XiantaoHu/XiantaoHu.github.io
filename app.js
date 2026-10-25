@@ -19,8 +19,7 @@
     const venue = escape(plain(p.venue)).replace(/\b(Highlight|Oral)\b/g,'<span class="distinction">$1</span>');
     const actions = [['Paper',p.pdf],['Code',p.code]].filter(([,u])=>u).map(([label,url])=>`<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`);
     if(p.bibtex) actions.push(`<button type="button" data-bib="${all.indexOf(p)}">BibTeX</button>`);
-    const heading = view === 'selected' ? 'h3' : 'h4';
-    return `<article class="publication"><div class="paper-year">${p.year}</div><div><${heading} class="paper-title">${title}</${heading}><p class="authors">${authors}</p><p class="venue">${venue}</p>${actions.length ? `<p class="paper-links">${actions.join('<span aria-hidden="true"> / </span>')}</p>` : ''}</div></article>`;
+    return `<article class="publication"><h3 class="paper-title">${title}</h3><p class="authors">${authors}</p><p class="venue">${venue}</p>${actions.length ? `<p class="paper-links">${actions.join('<span aria-hidden="true"> / </span>')}</p>` : ''}</article>`;
   }
   function matches(p, q) {
     return !q || [p.title, plain(p.authors), plain(p.venue), p.year].join(' ').toLowerCase().includes(q);
@@ -31,27 +30,15 @@
     selectedButton.setAttribute('aria-pressed', String(view === 'selected'));
     allButton.setAttribute('aria-pressed', String(view === 'all'));
     count.textContent = `${filtered.length} ${view === 'selected' ? 'selected ' : ''}${filtered.length === 1 ? 'publication' : 'publications'}${q ? ' matching your search' : ''}`;
-    document.getElementById('yearControls').hidden = view !== 'all' || !filtered.length;
     if (!filtered.length) {
       list.innerHTML = '<p class="empty-state">No publications found. Try a different title, author, venue, or year.</p>';
       return;
     }
-    if(view === 'selected') {
-      list.innerHTML = [...filtered].sort((a,b)=>b.year-a.year).map(renderPaper).join('');
-    } else {
-      list.innerHTML = [['Conference Papers',PUBLICATIONS.conference],['Journal Papers',PUBLICATIONS.journal]].map(([label,papers])=>{
-        const items = papers.filter(p=>matches(p,q));
-        if(!items.length) return '';
-        const years = [...new Set(items.map(p=>p.year))].sort((a,b)=>b-a);
-        return `<div class="publication-group"><h3>${label}</h3>${years.map(y=>{const group=items.filter(p=>p.year===y);return `<details class="year-group" open><summary>${y} · ${group.length} ${group.length===1?'publication':'publications'}</summary>${group.map(renderPaper).join('')}</details>`;}).join('')}</div>`;
-      }).join('');
-    }
+    list.innerHTML = [...filtered].sort((a,b)=>b.year-a.year).map(renderPaper).join('');
   }
   selectedButton.addEventListener('click',()=>{view='selected';render();});
   allButton.addEventListener('click',()=>{view='all';render();});
   search.addEventListener('input',render);
-  document.getElementById('expandAll').addEventListener('click',()=>list.querySelectorAll('details').forEach(group=>group.open=true));
-  document.getElementById('collapseAll').addEventListener('click',()=>list.querySelectorAll('details').forEach(group=>group.open=false));
   list.addEventListener('click',event=>{
     const button = event.target.closest('[data-bib]');
     if(!button) return;
