@@ -5,7 +5,7 @@ const PUBLICATIONS = {
       "year": 2026,
       "selected": true,
       "title": "State Evolution Awareness for Category-agnostic 3D Point Cloud Tracking.",
-      "authors": "<b>Xiantao Hu</b>, Ying Tai, Jinxia Xie, Bineng Zhong, Guangwei Gao, Jianjun Qian, Jian Yang.",
+      "authors": "<b>Xiantao Hu</b>, Ying Tai✉, Jinxia Xie, Bineng Zhong, Guangwei Gao, Jianjun Qian, Jian Yang✉.",
       "venue": "<i>Conference on Neural Information Processing Systems (NeurIPS), 2026.</i>",
       "pdf": "",
       "code": "https://github.com/NJU-PCALab/TETrack3D",
